@@ -1,0 +1,5 @@
+FROM nginx:latest as build
+COPY hello.html /usr/share/nginx/html/index.html
+
+FROM nginx:latest as runtime
+COPY --from=build /usr/share/nginx/html/ /usr/share/nginx/html/
