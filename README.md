@@ -65,7 +65,43 @@ https://www.docker.com/products/docker-desktop/
 
 
 # Chapter 3: Create Your Own Image
+
 ## Create From Docker Containers
+
+### Run nginx 
+`docker pull nginx:lastest`
+
+`docker rull -t nginx-origin nginx`
+
+### Customize index.html
+
+`docker exec -it nginx /bin/bash`
+
+`cd /etc/nginx/conf.d`
+
+`cat default.conf`
+
+`cd /usr/share/nginx/html`
+
+#### Check Linux Release
+`cat /etc/*release*`
+
+#### Install VIM editor
+`apt-get update && apt-get install vim`
+
+`vi index.html`
+
+### Pack to new Image
+
+`docker commit -c {change message} {container-id} {repository-name}:{tag}`
+
+### Review New Image
+
+`docker inspect {image}`
+
+`docker history {image}`
+
+
 ## Create From Dockerfile (As Blueprint)
 ## Multi-Stage Build
 
