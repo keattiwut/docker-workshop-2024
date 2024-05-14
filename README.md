@@ -333,6 +333,25 @@ docker container run --rm -d -p 8080:80 \
     nginx:latest
 ```
 
+#### Workshop 3 Nginx bind mount
+
+```bash
+touch /example.log
+cat >/example.conf <<EOF
+server {
+  listen 80;
+  server_name localhost;
+  access_log /var/log/nginx/custom.host.access.log main;
+  location / {
+    root /usr/share/nginx/html;
+    index index.html index.htm;
+  }
+}
+EOF
+```
+
+
+
 ```bash
 # Clear Container
 
@@ -376,19 +395,41 @@ winget install -e --id stedolan.jq
 
 
 
-```Dockerfile
+---
+# Public Your Image to Docker Hub
 
+1. Access to https://hub.docker.com/
+2. Login
+3. Create repository
+   
+
+## Login
+```bash
+docker login -u {username}
+```
+
+```bash
+docker image push {username}/{repository}:{tag}
 ```
 
 
+```bash
+# Create new image from existing by new repository name
+docker image tag {current_tag} {new_repository}:{tag}
+```
+
+**Notes**
+1. Don't forget to create repository on Docker Hub
+2. Tag name pattern in Docker Hub is {username}/{repository}:{tag}
 
 
----
-# Public Your Image to Docker Hub
-## Login
-## Public
-### How Manage Image Tag
 
+
+# Docker Scout
+
+## Vulnerability Scanning on Local image
+
+`docker scout overview`
 
 
 
@@ -398,11 +439,76 @@ winget install -e --id stedolan.jq
 ---
 # Using Docker as Development Environment
 ## JAVA
-## Node
 
+```bash
+docker container run --rm -it \
+    -w /app \
+    -v $(pwd):/app \
+    -v $(pwd)/target.d:/app/target \
+    eclipse-temurin:22.0.1_8-jdk-ubi9-minimal \
+    ./mvnw install
+```
 
+```Dockerfile
+FROM eclipse-temurin:22.0.1_8-jdk-ubi9-minimal as build
+WORKDIR /app
+COPY $(pwd) /app
+VOLUME $(pwd)/target.d /app/target
+CMD ["./mvnw", "install"]
+```
 
+```bash
+docker container run --rm -it \
+    -v ~/.m2/:/root/.m2/ \
+    -v ./target.d:/app/target/ \
+    jdk-22-builder
+```
 
+#### Create File "Dockerfile.runtime"
+```Dockerfile
+FROM eclipse-temurin:22.0.1_8-jdk-ubi9-minimal as build
+WORKDIR /app
+COPY $(pwd) /app
+VOLUME /root/.m2
+RUN ./mvnw install
+
+FROM clipse-temurin:22.0.1_8-jre-ubi9-minimal as runtime
+WORKDIR /app
+COPY --from=build /app/target/demo-0.0.1-SNAPSHOT.jar /app
+ENTRYPOINT ["java"]
+CMD ["-jar", "demo-0.0.1-SNAPSHOT.jar"]
+```
+
+**Build demo-app**
+```bash
+docker image build -t demo-app:v1 -f Dockerfile.runtime .
+```
+**Run Demo application**
+```bash
+docker container run --rm -d --name demo-app demo-app:v1
+```
+
+## JAVA Auto Restart for Development
+
+```Dockerfile
+FROM eclipse-temurin:22.0.1_8-jdk-ubi9-minimal as build
+WORKDIR /app
+VOLUME /root/.m2/ /app
+ENTRYPOINT [ "./mvnw" ]
+CMD ["spring-boot:run"]
+```
+
+```bash
+# Build
+docker image build -t demo-app:v2 .
+
+# Run
+docker container run --rm -d --name demo-app-v2 \
+    -v ~/.m2:/root/.m2 \
+    -v $(pwd):/app/ \
+    -p 8080:8080 \
+    demo-app:v2
+```
 
 
 ---
