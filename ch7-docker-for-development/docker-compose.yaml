@@ -15,30 +15,27 @@ services:
     build:
       context: ./demo-app/
       dockerfile: ./Dockerfile.local
-    # container_name: spring-boot-app
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/mydatabase
-      SPRING_DATASOURCE_USERNAME: myusername
-      SPRING_DATASOURCE_PASSWORD: mypassword
-      SPRING_JPA_HIBERNATE_DDL_AUTO: update
-      SPRING_JPA_SHOW_SQL: "true"
+    container_name: spring-boot-app
+    env_file: ./demo-app/.env.local
     ports:
-      - "8080-8090:8080"
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
     depends_on:
       - postgres
 
   newman:
-    build:
-      context: ./api-test/
-      dockerfile: ./Dockerfile
-    container_name: newman
+    image: postman/newman:6-alpine
     volumes:
-      - ./api-test/postman_collection.json:/etc/newman/postman_collection.json
-      - ./api/test/postman_environment.json:/etc/newman/postman_environment.json
+      - ./api-test/collection:/etc/newman
       - ./api-test/results:/etc/newman/results
+    command: ["run", "postman_collection.json", "-e", "postman_environment.json", "-d", "datatest.csv", "--reporters", "cli,junit", "--reporter-junit-export", "results/report.xml"]
     depends_on:
-      - spring-boot-app
-      - postgres
+      spring-boot-app:
+        condition: service_healthy
 
 volumes:
   postgres_data:

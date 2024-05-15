@@ -777,7 +777,20 @@ docker exec -it postgres \
 ```
 
 
+#### Use docker run api test
 
+```bash
+docker run --rm -it \
+    -v $(pwd)/collection:/etc/newman/collection \
+    -v $(pwd)/results:/etc/newman/results \
+    --network ch7-docker-for-development_default \
+    postman/newman:latest \
+    run \
+        ./collection/postman_collection.json \
+        -e ./collection/postman_environment.json \
+        -d ./collection/datatest.csv \
+        -reporters cli,junit --reporter-junit-export="newman-report.xml"
+```
 
 
 

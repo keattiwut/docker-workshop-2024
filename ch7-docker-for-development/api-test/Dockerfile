@@ -1,10 +1,9 @@
-FROM postman/newman:latest
+FROM postman/newman:6-alpine
 
-VOLUME [ "/etc/newman/postman_collection.json", \
-    "/etc/newman/postman_environment.json", \
-    "/etc/newman/results"]
+COPY ./collection /etc/newman
 
 CMD ["run", "postman_collection.json", \
-    "--environment", "postman_environment.json", \
+    "-e", "postman_environment.json", \
+    "-d", "datatest.csv" \
     "--reporters", "cli,junit", \
     "--reporter-junit-export", "results/report.xml"]

@@ -1,13 +1,11 @@
 # Define variables
 DOCKER_COMPOSE = docker-compose
 IMAGE_NAME = spring-boot-app
-POSTMAN_COLLECTION = postman_collection.json
-POSTMAN_ENVIRONMENT = postman_environment.json
 RESULTS_DIR = results
 
 .PHONY: all build up test clean
 
-all: build up test
+all: build test down
 
 # Build the Docker images
 build:
@@ -30,8 +28,8 @@ clean: down
 	docker rmi $(IMAGE_NAME)
 
 # Create the results directory if it doesn't exist
-$(RESULTS_DIR):
-	mkdir -p $(RESULTS_DIR)
+# $(RESULTS_DIR):
+# 	mkdir -p $(RESULTS_DIR)
 
 # Ensure results directory exists before running tests
-test: $(RESULTS_DIR)
+# test: $(RESULTS_DIR)

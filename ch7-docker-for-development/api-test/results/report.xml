@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Spring Boot REST API" tests="208" time="2.858">
+  <testsuite name="Get All Users" id="075ea1d9-ba8d-4d8f-aceb-c393cc750481" timestamp="2024-05-15T15:14:17.474Z" tests="9" failures="2" errors="0" time="0.014">
+    <testcase name="Response status code is 200" time="0.011" classname="SpringBootRestApi"/>
+    <testcase name="Response has the required fields - id, name, and email" time="0.011" classname="SpringBootRestApi"/>
+    <testcase name="Content-Type header is application/json" time="0.011" classname="SpringBootRestApi"/>
+    <testcase name="Response time is less than 200ms" time="0.011" classname="SpringBootRestApi"/>
+    <testcase name="Presence of specific header in the response" time="0.011" classname="SpringBootRestApi"/>
+  </testsuite>
+  <testsuite name="Create User" id="611bacf7-2c93-445d-a261-6933e4efe5c1" timestamp="2024-05-15T15:14:17.474Z" tests="9" failures="0" errors="0" time="0.014">
+    <testcase name="Status code is 200" time="0.011" classname="SpringBootRestApi"/>
+    <testcase name="Content-Type is present" time="0.011" classname="SpringBootRestApi"/>
+    <testcase name="Response time is less than 1000ms" time="0.011" classname="SpringBootRestApi"/>
+    <testcase name="Response schema is valid" time="0.011" classname="SpringBootRestApi"/>
+    <testcase name="Response has the required fields - id, name, and email" time="0.011" classname="SpringBootRestApi"/>
+    <testcase name="Email is in a valid format" time="0.011" classname="SpringBootRestApi"/>
+    <testcase name="Response time is less than 200ms" time="0.011" classname="SpringBootRestApi"/>
+    <testcase name="Content-Type is application/json" time="0.011" classname="SpringBootRestApi"/>
+  </testsuite>
+</testsuites>

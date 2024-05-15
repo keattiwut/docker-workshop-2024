@@ -1,0 +1,248 @@
+{
+	"info": {
+		"_postman_id": "c1356008-1762-472d-9f09-04259476013a",
+		"name": "Spring Boot REST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33380969"
+	},
+	"item": [
+		{
+			"name": "Get All Users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response has the required fields - id, name, and email\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('array').that.is.not.empty;",
+							"    responseData.forEach(function(user) {",
+							"        pm.expect(user).to.have.property('id').that.is.a('number');",
+							"        pm.expect(user).to.have.property('name').that.is.a('string');",
+							"        pm.expect(user).to.have.property('email').that.is.a('string');",
+							"    });",
+							"});",
+							"",
+							"",
+							"pm.test(\"Content-Type header is application/json\", function () {",
+							"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"  pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"pm.test(\"Presence of specific header in the response\", function () {",
+							"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.exist;",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response has the required fields - id, name, and email\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('array');",
+							"    responseData.forEach(function(user) {",
+							"        pm.expect(user).to.have.property('id');",
+							"        pm.expect(user).to.have.property('name');",
+							"        pm.expect(user).to.have.property('email');",
+							"    });",
+							"});",
+							"",
+							"",
+							"pm.test(\"Content-Type header is application/json\", function () {",
+							"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"  pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"var template = `",
+							"<canvas id=\"myChart\" height=\"75\"></canvas>",
+							"",
+							"<script src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js\"></script> ",
+							"",
+							"<script>",
+							"    var ctx = document.getElementById(\"myChart\");",
+							"",
+							"    var myChart = new Chart(ctx, {",
+							"        type: \"bar\",",
+							"        data: {",
+							"            labels: [],",
+							"            datasets: [{",
+							"                data: [],",
+							"                ",
+							"                // Change these colours to customize the chart",
+							"                backgroundColor: [\"#003f5c\", \"#58508d\", \"#bc5090\", \"#ff6361\", \"#ffa600\"],",
+							"            }]",
+							"        },",
+							"        options: {",
+							"            legend: { display: false },",
+							"            title: {",
+							"                display: true,",
+							"                text: 'User Data'",
+							"            },",
+							"            scales: {",
+							"                xAxes: [{",
+							"                    display: true,",
+							"                    scaleLabel: {",
+							"                        display: true,",
+							"                        labelString: 'Users'",
+							"                    }",
+							"                }],",
+							"                yAxes: [{",
+							"                    display: true,",
+							"                    scaleLabel: {",
+							"                        display: true,",
+							"                        labelString: 'Count'",
+							"                    }",
+							"                }]",
+							"            }",
+							"        }",
+							"",
+							"    });",
+							"",
+							"    // Access the data passed to pm.visualizer.set() from the JavaScript",
+							"    // code of the Visualizer template",
+							"    pm.getData(function (err, value) {",
+							"        myChart.data.datasets[0].data = value.response.map(user => user.id);",
+							"        myChart.data.labels = value.response.map(user => user.name);",
+							"        myChart.update();",
+							"    });",
+							"",
+							"</script>`;",
+							"",
+							"function constructVisualizerPayload() {",
+							"    return { response: pm.response.json() };",
+							"}",
+							"",
+							"pm.visualizer.set(template, constructVisualizerPayload());"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/api/users",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				},
+				"description": "The endpoint retrieves a list of users from the API. The response returned is a JSON array containing user objects with \"id\", \"name\", and \"email\" fields. To document the response as a JSON schema, you can use the following schema definition:\n\n``` json\n{\n  \"type\": \"array\",\n  \"items\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"id\": {\n        \"type\": \"integer\"\n      },\n      \"name\": {\n        \"type\": \"string\"\n      },\n      \"email\": {\n        \"type\": \"string\",\n        \"format\": \"email\"\n      }\n    }\n  }\n}\n\n ```"
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Content-Type is present\", function () {",
+							"    pm.response.to.have.header(\"Content-Type\", \"application/json\");",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 1000ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+							"});",
+							"",
+							"// Test to validate the response schema",
+							"pm.test(\"Response schema is valid\", function () {",
+							"    pm.expect(pm.response.json()).to.have.property('id').that.is.a('number');",
+							"    pm.expect(pm.response.json()).to.have.property('name').that.is.a('string');",
+							"    pm.expect(pm.response.json()).to.have.property('email').that.is.a('string');",
+							"});",
+							"",
+							"pm.test(\"Response has the required fields - id, name, and email\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData).to.have.property('id');",
+							"    pm.expect(responseData).to.have.property('name');",
+							"    pm.expect(responseData).to.have.property('email');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Email is in a valid format\", function () {",
+							"  const responseData = pm.response.json();",
+							"  ",
+							"  pm.expect(responseData.email).to.be.a('string');",
+							"  pm.expect(responseData.email).to.match(/\\S+@\\S+\\.\\S+/); // Regular expression for email format",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"  pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Content-Type is application/json\", function () {",
+							"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"uuid": "1fb0b2b7-3dbf-434c-852f-9873f4f615c3"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"{{name}}\",\n    \"email\": \"{{email}}\"\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/api/users",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
