@@ -1,0 +1,44 @@
+services:
+  postgres:
+    image: postgres:13
+    container_name: postgres
+    environment:
+      POSTGRES_DB: mydatabase
+      POSTGRES_USER: myusername
+      POSTGRES_PASSWORD: mypassword
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  spring-boot-app:
+    build:
+      context: ./demo-app/
+      dockerfile: ./Dockerfile.local
+    # container_name: spring-boot-app
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/mydatabase
+      SPRING_DATASOURCE_USERNAME: myusername
+      SPRING_DATASOURCE_PASSWORD: mypassword
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_SHOW_SQL: "true"
+    ports:
+      - "8080-8090:8080"
+    depends_on:
+      - postgres
+
+  newman:
+    build:
+      context: ./api-test/
+      dockerfile: ./Dockerfile
+    container_name: newman
+    volumes:
+      - ./api-test/postman_collection.json:/etc/newman/postman_collection.json
+      - ./api/test/postman_environment.json:/etc/newman/postman_environment.json
+      - ./api-test/results:/etc/newman/results
+    depends_on:
+      - spring-boot-app
+      - postgres
+
+volumes:
+  postgres_data:

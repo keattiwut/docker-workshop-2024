@@ -757,6 +757,25 @@ docker network ls
 ## Docker Compose Play that Role
 
 
+```bash
+docker compose up
+
+docker compose down
+
+docker compose build postgres spring-boot-app --no-cache
+
+
+
+
+# Exec Qeury
+docker exec -it postgres psql -U myusername -d mydatabase -c "select count(1) from users"
+
+# Check maximum connection
+docker exec -it postgres \
+    psql -U myusername -d mydatabase \
+    -c "SELECT name, setting FROM pg_settings WHERE name = 'max_connections'"
+```
+
 
 
 
