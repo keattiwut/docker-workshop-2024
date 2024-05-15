@@ -1,4 +1,4 @@
-package sck.demo.demoapp;
+package sck.demo.demoapp.user;
 
 import java.util.List;
 
