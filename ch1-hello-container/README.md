@@ -3,12 +3,19 @@
 ## Hello Docker
 
 ```bash
-docker pull hello-world
+docker image pull hello-world
+
+docker container run hello-world
 ```
 
 ```bash
-docker container run hello-world
+docker image pull rancher/cowsay
+
+docker container run rancher/cowsay Hello
 ```
+
+
+
 
 ## Create Your Own Docker
 
@@ -21,6 +28,6 @@ Dockerfile
 FROM hello-world
 ```
 
-```sh
+```bash
 docker build -t hello-my-world .
 ```
