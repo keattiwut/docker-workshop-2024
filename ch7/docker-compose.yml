@@ -32,7 +32,21 @@ services:
     volumes:
       - ./api-test/collection:/etc/newman
       - ./api-test/results:/etc/newman/results
-    command: ["run", "postman_collection.json", "-e", "postman_environment.json", "-d", "datatest.csv", "--reporters", "cli,junit", "--reporter-junit-export", "results/report.xml"]
+    command:
+      [
+        "run",
+        "postman_collection.json",
+        "-e",
+        "postman_environment.json",
+        "-d",
+        "datatest.csv",
+        "--reporters",
+        "cli,junit",
+        "--reporter-junit-export",
+        "results/report.xml",
+        "--reporter-json-export",
+        "results/json_report.json",
+      ]
     depends_on:
       spring-boot-app:
         condition: service_healthy
