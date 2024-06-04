@@ -1,0 +1,1413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Spring Boot REST API" tests="208" time="0.000">
+  <testsuite name="Get All Users" id="eb1380ff-ddf4-4232-a1dd-ad3c66509935" timestamp="2024-06-04T04:49:52.735Z" tests="9" failures="936" errors="208" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 1
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 2
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 3
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 4
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 5
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 6
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 7
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 8
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 9
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 10
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 11
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 12
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 13
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 14
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 15
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 16
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 17
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 18
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 19
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 20
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 21
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 22
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 23
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 24
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 25
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 26
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 27
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 28
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 29
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 30
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 31
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 32
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 33
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 34
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 35
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 36
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 37
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 38
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 39
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 40
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 41
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 42
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 43
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 44
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 45
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 46
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 47
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 48
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 49
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 50
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 51
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 52
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 53
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 54
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 55
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 56
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 57
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 58
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 59
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 60
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 61
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 62
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 63
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 64
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 65
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 66
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 67
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 68
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 69
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 70
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 71
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 72
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 73
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 74
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 75
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 76
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 77
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 78
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 79
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 80
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 81
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 82
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 83
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 84
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 85
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 86
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 87
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 88
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 89
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 90
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 91
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 92
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 93
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 94
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 95
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 96
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 97
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 98
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 99
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 100
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 101
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 102
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+Iteration: 103
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+testScriptError: Unexpected token u in JSON at position 0
+---
+]]></system-err>
+    <testcase name="Response status code is 200" time="0.000" classname="SpringBootRestApi">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 208 times.]]>
+        <![CDATA[Collection JSON ID: c1356008-1762-472d-9f09-04259476013a.]]>
+        <![CDATA[Collection name: Spring Boot REST API.]]>
+        <![CDATA[Request name: Get All Users.]]>
+        <![CDATA[Test description: Response status code is 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response has the required fields - id, name, and email" time="0.000" classname="SpringBootRestApi">
+      <failure type="AssertionFailure" message="Unexpected token u in JSON at position 0">
+        <![CDATA[Failed 208 times.]]>
+        <![CDATA[Collection JSON ID: c1356008-1762-472d-9f09-04259476013a.]]>
+        <![CDATA[Collection name: Spring Boot REST API.]]>
+        <![CDATA[Request name: Get All Users.]]>
+        <![CDATA[Test description: Response has the required fields - id, name, and email.]]>
+        <![CDATA[Error message: Unexpected token u in JSON at position 0.]]>
+        <![CDATA[Stacktrace: JSONError: Unexpected token u in JSON at position 0
+   at Object.eval sandbox-script.js:2:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type header is application/json" time="0.000" classname="SpringBootRestApi">
+      <failure type="AssertionFailure" message="the given combination of arguments (undefined and string) is invalid for this assertion. You can use an array, a map, an object, a set, a string, or a weakset instead of a string">
+        <![CDATA[Failed 208 times.]]>
+        <![CDATA[Collection JSON ID: c1356008-1762-472d-9f09-04259476013a.]]>
+        <![CDATA[Collection name: Spring Boot REST API.]]>
+        <![CDATA[Request name: Get All Users.]]>
+        <![CDATA[Test description: Content-Type header is application/json.]]>
+        <![CDATA[Error message: the given combination of arguments (undefined and string) is invalid for this assertion. You can use an array, a map, an object, a set, a string, or a weakset instead of a string.]]>
+        <![CDATA[Stacktrace: AssertionError: the given combination of arguments (undefined and string) is invalid for this assertion. You can use an array, a map, an object, a set, a string, or a weakset instead of a string
+   at Object.eval sandbox-script.js:3:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 200ms" time="0.000" classname="SpringBootRestApi">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 208 times.]]>
+        <![CDATA[Collection JSON ID: c1356008-1762-472d-9f09-04259476013a.]]>
+        <![CDATA[Collection name: Spring Boot REST API.]]>
+        <![CDATA[Request name: Get All Users.]]>
+        <![CDATA[Test description: Response time is less than 200ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:4:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="Presence of specific header in the response" time="0.000" classname="SpringBootRestApi">
+      <failure type="AssertionFailure" message="expected undefined to exist">
+        <![CDATA[Failed 104 times.]]>
+        <![CDATA[Collection JSON ID: c1356008-1762-472d-9f09-04259476013a.]]>
+        <![CDATA[Collection name: Spring Boot REST API.]]>
+        <![CDATA[Request name: Get All Users.]]>
+        <![CDATA[Test description: Presence of specific header in the response.]]>
+        <![CDATA[Error message: expected undefined to exist.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to exist
+   at Object.eval sandbox-script.js:5:1).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Create User" id="7121e790-222a-4075-8307-2136b8480219" timestamp="2024-06-04T04:49:52.735Z" tests="9" failures="936" errors="104" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 1
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 2
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 3
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 4
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 5
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 6
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 7
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 8
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 9
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 10
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 11
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 12
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 13
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 14
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 15
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 16
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 17
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 18
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 19
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 20
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 21
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 22
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 23
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 24
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 25
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 26
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 27
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 28
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 29
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 30
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 31
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 32
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 33
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 34
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 35
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 36
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 37
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 38
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 39
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 40
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 41
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 42
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 43
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 44
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 45
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 46
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 47
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 48
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 49
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 50
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 51
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 52
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 53
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 54
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 55
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 56
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 57
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 58
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 59
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 60
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 61
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 62
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 63
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 64
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 65
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 66
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 67
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 68
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 69
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 70
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 71
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 72
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 73
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 74
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 75
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 76
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 77
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 78
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 79
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 80
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 81
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 82
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 83
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 84
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 85
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 86
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 87
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 88
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 89
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 90
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 91
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 92
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 93
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 94
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 95
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 96
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 97
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 98
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 99
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 100
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 101
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 102
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+Iteration: 103
+RequestError: Error: getaddrinfo ENOTFOUND spring-boot-app
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:26)
+
+---
+]]></system-err>
+    <testcase name="Status code is 200" time="0.000" classname="SpringBootRestApi">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 208 times.]]>
+        <![CDATA[Collection JSON ID: c1356008-1762-472d-9f09-04259476013a.]]>
+        <![CDATA[Collection name: Spring Boot REST API.]]>
+        <![CDATA[Request name: Create User.]]>
+        <![CDATA[Test description: Status code is 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is present" time="0.000" classname="SpringBootRestApi">
+      <failure type="AssertionFailure" message="expected response to have header with key 'Content-Type'">
+        <![CDATA[Failed 104 times.]]>
+        <![CDATA[Collection JSON ID: c1356008-1762-472d-9f09-04259476013a.]]>
+        <![CDATA[Collection name: Spring Boot REST API.]]>
+        <![CDATA[Request name: Create User.]]>
+        <![CDATA[Test description: Content-Type is present.]]>
+        <![CDATA[Error message: expected response to have header with key 'Content-Type'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have header with key 'Content-Type'
+   at Object.eval sandbox-script.js:2:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 1000ms" time="0.000" classname="SpringBootRestApi">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 104 times.]]>
+        <![CDATA[Collection JSON ID: c1356008-1762-472d-9f09-04259476013a.]]>
+        <![CDATA[Collection name: Spring Boot REST API.]]>
+        <![CDATA[Request name: Create User.]]>
+        <![CDATA[Test description: Response time is less than 1000ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:3:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response schema is valid" time="0.000" classname="SpringBootRestApi">
+      <failure type="AssertionFailure" message="Unexpected token u in JSON at position 0">
+        <![CDATA[Failed 104 times.]]>
+        <![CDATA[Collection JSON ID: c1356008-1762-472d-9f09-04259476013a.]]>
+        <![CDATA[Collection name: Spring Boot REST API.]]>
+        <![CDATA[Request name: Create User.]]>
+        <![CDATA[Test description: Response schema is valid.]]>
+        <![CDATA[Error message: Unexpected token u in JSON at position 0.]]>
+        <![CDATA[Stacktrace: JSONError: Unexpected token u in JSON at position 0
+   at Object.eval sandbox-script.js:4:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response has the required fields - id, name, and email" time="0.000" classname="SpringBootRestApi">
+      <failure type="AssertionFailure" message="Unexpected token u in JSON at position 0">
+        <![CDATA[Failed 104 times.]]>
+        <![CDATA[Collection JSON ID: c1356008-1762-472d-9f09-04259476013a.]]>
+        <![CDATA[Collection name: Spring Boot REST API.]]>
+        <![CDATA[Request name: Create User.]]>
+        <![CDATA[Test description: Response has the required fields - id, name, and email.]]>
+        <![CDATA[Error message: Unexpected token u in JSON at position 0.]]>
+        <![CDATA[Stacktrace: JSONError: Unexpected token u in JSON at position 0
+   at Object.eval sandbox-script.js:5:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Email is in a valid format" time="0.000" classname="SpringBootRestApi">
+      <failure type="AssertionFailure" message="Unexpected token u in JSON at position 0">
+        <![CDATA[Failed 104 times.]]>
+        <![CDATA[Collection JSON ID: c1356008-1762-472d-9f09-04259476013a.]]>
+        <![CDATA[Collection name: Spring Boot REST API.]]>
+        <![CDATA[Request name: Create User.]]>
+        <![CDATA[Test description: Email is in a valid format.]]>
+        <![CDATA[Error message: Unexpected token u in JSON at position 0.]]>
+        <![CDATA[Stacktrace: JSONError: Unexpected token u in JSON at position 0
+   at Object.eval sandbox-script.js:6:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Response time is less than 200ms" time="0.000" classname="SpringBootRestApi">
+      <failure type="AssertionFailure" message="expected undefined to be a number or a date">
+        <![CDATA[Failed 104 times.]]>
+        <![CDATA[Collection JSON ID: c1356008-1762-472d-9f09-04259476013a.]]>
+        <![CDATA[Collection name: Spring Boot REST API.]]>
+        <![CDATA[Request name: Create User.]]>
+        <![CDATA[Test description: Response time is less than 200ms.]]>
+        <![CDATA[Error message: expected undefined to be a number or a date.]]>
+        <![CDATA[Stacktrace: AssertionError: expected undefined to be a number or a date
+   at Object.eval sandbox-script.js:7:2).]]>
+      </failure>
+    </testcase>
+    <testcase name="Content-Type is application/json" time="0.000" classname="SpringBootRestApi">
+      <failure type="AssertionFailure" message="the given combination of arguments (undefined and string) is invalid for this assertion. You can use an array, a map, an object, a set, a string, or a weakset instead of a string">
+        <![CDATA[Failed 104 times.]]>
+        <![CDATA[Collection JSON ID: c1356008-1762-472d-9f09-04259476013a.]]>
+        <![CDATA[Collection name: Spring Boot REST API.]]>
+        <![CDATA[Request name: Create User.]]>
+        <![CDATA[Test description: Content-Type is application/json.]]>
+        <![CDATA[Error message: the given combination of arguments (undefined and string) is invalid for this assertion. You can use an array, a map, an object, a set, a string, or a weakset instead of a string.]]>
+        <![CDATA[Stacktrace: AssertionError: the given combination of arguments (undefined and string) is invalid for this assertion. You can use an array, a map, an object, a set, a string, or a weakset instead of a string
+   at Object.eval sandbox-script.js:9:2).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+</testsuites>

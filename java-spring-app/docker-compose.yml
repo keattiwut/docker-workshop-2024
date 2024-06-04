@@ -1,0 +1,52 @@
+services:
+  db:
+    container_name: db
+    image: postgres@sha256:7b48f843839a3e8b93a750bc5ca8e56b08e9f01466ab7903ff9cd1fc9f0fe259
+    env_file: .env_db
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  demo-app:
+    container_name: demo-app
+    build:
+      context: ./demo-app/
+      dockerfile: ./Dockerfile
+    env_file: ./demo-app/.env.local
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  newman:
+    image: postman/newman@sha256:859d9cf5d6af5a1a9d5e13fc2d6977018653373eeddf7638ca7599f9d4fd673c
+    volumes:
+      - ./api-test/collection:/etc/newman
+      - ./api-test/results:/etc/newman/results
+    command:
+      [
+        "run",
+        "postman_collection.json",
+        "-e",
+        "postman_environment.json",
+        "-d",
+        "datatest.csv",
+        "--reporters",
+        "cli,junit",
+        "--reporter-junit-export",
+        "results/report.xml",
+        "--reporter-json-export",
+        "results/json_report.json",
+      ]
+    depends_on:
+      demo-app:
+        condition: service_healthy
+
+volumes:
+  db_data: {}
